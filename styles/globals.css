@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-syne: "Syne", sans-serif;
+  --font-dm-sans: "DM Sans", sans-serif;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background: #040408;
+    color: #f0f0f8;
+    font-family: var(--font-dm-sans), sans-serif;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: rgba(91, 110, 245, 0.3);
+    color: #f0f0f8;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #040408;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #5b6ef5;
+    border-radius: 2px;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #5b6ef5, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-outline {
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+  }
+
+  .glass {
+    background: rgba(21, 21, 31, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .glow-accent {
+    box-shadow: 0 0 40px rgba(91, 110, 245, 0.4);
+  }
+
+  .glow-accent-sm {
+    box-shadow: 0 0 20px rgba(91, 110, 245, 0.25);
+  }
+
+  .border-gradient {
+    border: 1px solid transparent;
+    background: linear-gradient(#15151f, #15151f) padding-box,
+      linear-gradient(135deg, #5b6ef5, #a78bfa) border-box;
+  }
+
+  .section-padding {
+    @apply px-6 py-24 md:px-12 lg:px-24;
+  }
+
+  .container-narrow {
+    @apply max-w-6xl mx-auto;
+  }
+
+  .container-wide {
+    @apply max-w-7xl mx-auto;
+  }
+
+  /* Grid background */
+  .bg-grid {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.025) 1px,
+        transparent 1px
+      ),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+    background-size: 80px 80px;
+  }
+
+  /* Mask utilities */
+  .mask-radial-fade {
+    mask-image: radial-gradient(
+      ellipse 80% 80% at 50% 50%,
+      black 0%,
+      transparent 100%
+    );
+  }
+}
