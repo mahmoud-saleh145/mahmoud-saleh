@@ -39,7 +39,7 @@ export function ProjectCard({ project, featured, className }: ProjectCardProps) 
       aria-label={`Project: ${project.title}`}
     >
       {/* Hover radial glow */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(91,110,245,0.07),transparent)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(14,205,176,0.07),transparent)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
 
       {/* Card header */}
       <div className="flex items-start justify-between mb-4">

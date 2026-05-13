@@ -35,7 +35,7 @@ export function SkillsSection() {
     >
       {/* Radial bg */}
       <div
-        className="absolute -top-48 -right-48 w-[600px] h-[600px] rounded-full bg-[radial-gradient(circle,rgba(91,110,245,0.06),transparent_70%)] pointer-events-none"
+        className="absolute -top-48 -right-48 w-[600px] h-[600px] rounded-full bg-[radial-gradient(circle,rgba(14,205,176,0.06),transparent_70%)] pointer-events-none"
         aria-hidden
       />
 

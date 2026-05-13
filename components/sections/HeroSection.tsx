@@ -16,8 +16,8 @@ export function HeroSection() {
       {/* Background */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden>
         <div className="absolute inset-0 bg-grid mask-radial-fade opacity-60" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_60%_at_70%_50%,rgba(91,110,245,0.12),transparent)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_40%_40%_at_20%_80%,rgba(167,139,250,0.07),transparent)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_60%_at_70%_50%,rgba(14,205,176,0.10),transparent)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_40%_40%_at_20%_80%,rgba(94,231,212,0.06),transparent)]" />
       </div>
 
       <div className="relative z-10 w-full max-w-6xl">

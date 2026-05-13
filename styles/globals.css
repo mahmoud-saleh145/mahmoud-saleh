@@ -21,33 +21,35 @@
   }
 
   body {
-    background: #040408;
-    color: #f0f0f8;
+    background: #020C0E;
+    color: #D8F5F2;
     font-family: var(--font-dm-sans), sans-serif;
     overflow-x: hidden;
   }
 
   ::selection {
-    background: rgba(91, 110, 245, 0.3);
-    color: #f0f0f8;
+    background: rgba(14, 205, 176, 0.25);
+    color: #D8F5F2;
   }
 
   /* Custom scrollbar */
   ::-webkit-scrollbar {
     width: 4px;
   }
+
   ::-webkit-scrollbar-track {
-    background: #040408;
+    background: #020C0E;
   }
+
   ::-webkit-scrollbar-thumb {
-    background: #5b6ef5;
+    background: #0ECDB0;
     border-radius: 2px;
   }
 }
 
 @layer utilities {
   .text-gradient {
-    background: linear-gradient(135deg, #5b6ef5, #a78bfa);
+    background: linear-gradient(135deg, #0ECDB0, #5EE7D4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -55,27 +57,27 @@
 
   .text-outline {
     color: transparent;
-    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+    -webkit-text-stroke: 1px rgba(14, 205, 176, 0.20);
   }
 
   .glass {
-    background: rgba(21, 21, 31, 0.6);
+    background: rgba(13, 34, 40, 0.75);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
   }
 
   .glow-accent {
-    box-shadow: 0 0 40px rgba(91, 110, 245, 0.4);
+    box-shadow: 0 0 40px rgba(14, 205, 176, 0.30);
   }
 
   .glow-accent-sm {
-    box-shadow: 0 0 20px rgba(91, 110, 245, 0.25);
+    box-shadow: 0 0 20px rgba(14, 205, 176, 0.20);
   }
 
   .border-gradient {
     border: 1px solid transparent;
-    background: linear-gradient(#15151f, #15151f) padding-box,
-      linear-gradient(135deg, #5b6ef5, #a78bfa) border-box;
+    background: linear-gradient(#0D2228, #0D2228) padding-box,
+      linear-gradient(135deg, #0ECDB0, #5EE7D4) border-box;
   }
 
   .section-padding {
@@ -92,20 +94,16 @@
 
   /* Grid background */
   .bg-grid {
-    background-image: linear-gradient(
-        rgba(255, 255, 255, 0.025) 1px,
-        transparent 1px
-      ),
+    background-image: linear-gradient(rgba(255, 255, 255, 0.025) 1px,
+        transparent 1px),
       linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
     background-size: 80px 80px;
   }
 
   /* Mask utilities */
   .mask-radial-fade {
-    mask-image: radial-gradient(
-      ellipse 80% 80% at 50% 50%,
-      black 0%,
-      transparent 100%
-    );
+    mask-image: radial-gradient(ellipse 80% 80% at 50% 50%,
+        black 0%,
+        transparent 100%);
   }
 }

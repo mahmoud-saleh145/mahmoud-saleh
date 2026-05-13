@@ -15,24 +15,24 @@ const config: Config = {
       },
       colors: {
         bg: {
-          DEFAULT: "#040408",
-          2: "#0b0b12",
-          3: "#111120",
+          DEFAULT: "#020C0E",  // near-black deep ocean base
+          2: "#051218",        // section alternating bg
+          3: "#081C20",        // deepest nested bg
         },
         surface: {
-          DEFAULT: "#15151f",
-          2: "#1c1c2a",
+          DEFAULT: "#0D2228",  // card backgrounds
+          2: "#122F38",        // nested elements inside cards
         },
         accent: {
-          DEFAULT: "#5b6ef5",
-          2: "#a78bfa",
-          3: "#34d399",
+          DEFAULT: "#0ECDB0",  // PRIMARY — cyan-teal
+          2: "#5EE7D4",        // SECONDARY — lighter teal highlight
+          3: "#F59E0B",        // WARM — amber for status/success contrast
         },
         border: {
-          DEFAULT: "rgba(255,255,255,0.07)",
-          2: "rgba(255,255,255,0.12)",
+          DEFAULT: "rgba(14,205,176,0.08)",   // teal-tinted subtle border
+          2: "rgba(14,205,176,0.18)",         // hover/active border
         },
-        muted: "#7a7a9a",
+        muted: "#5A8A87",      // muted teal-grey for secondary text
       },
       animation: {
         marquee: "marquee 25s linear infinite",

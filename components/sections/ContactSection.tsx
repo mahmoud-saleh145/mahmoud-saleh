@@ -69,7 +69,7 @@ export function ContactSection() {
     >
       {/* Radial glow */}
       <div
-        className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-[radial-gradient(circle,rgba(91,110,245,0.08),transparent_70%)] pointer-events-none"
+        className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-[radial-gradient(circle,rgba(14,205,176,0.07),transparent_70%)] pointer-events-none"
         aria-hidden
       />
 
