@@ -66,7 +66,7 @@ export function AboutSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-60px" }}
-            className="hidden lg:flex justify-center"
+            className="hidden lg:flex justify-center px-10 overflow-visible"
             aria-hidden
           >
             <div className="relative animate-float">

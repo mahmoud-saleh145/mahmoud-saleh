@@ -33,9 +33,9 @@ export function SkillsSection() {
       className="section-padding relative overflow-hidden"
       aria-labelledby="skills-heading"
     >
-      {/* Radial bg */}
+      {/* Radial bg — inset so it never exceeds section bounds */}
       <div
-        className="absolute -top-48 -right-48 w-[600px] h-[600px] rounded-full bg-[radial-gradient(circle,rgba(14,205,176,0.06),transparent_70%)] pointer-events-none"
+        className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-[radial-gradient(circle,rgba(14,205,176,0.06),transparent_70%)] pointer-events-none translate-x-1/3 -translate-y-1/4"
         aria-hidden
       />
 
@@ -100,16 +100,16 @@ export function SkillsSection() {
         </StaggerGroup>
 
         {/* Marquee */}
-        <AnimateIn>
+        <AnimateIn className="overflow-hidden">
           <div
             className="overflow-hidden border-y border-border py-4"
             aria-hidden
           >
-            <div className="flex gap-10 animate-marquee whitespace-nowrap">
+            <div className="flex gap-10 animate-marquee whitespace-nowrap will-change-transform">
               {[...marqueeSkills, ...marqueeSkills].map((skill, i) => (
                 <span
                   key={i}
-                  className="inline-flex items-center gap-2 text-muted text-sm"
+                  className="inline-flex items-center gap-2 text-muted text-sm flex-shrink-0"
                 >
                   <span className="w-1 h-1 rounded-full bg-accent opacity-70" />
                   {skill}

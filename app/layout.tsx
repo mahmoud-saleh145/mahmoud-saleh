@@ -57,8 +57,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${syne.variable} ${dmSans.variable}`}>
-      <body className="bg-bg text-white font-dm antialiased">
-        {children}
+      <body className="bg-bg text-white font-dm antialiased overflow-x-hidden">
+        <div className="overflow-x-hidden w-full">
+          {children}
+        </div>
       </body>
     </html>
   );

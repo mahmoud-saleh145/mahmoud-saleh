@@ -34,7 +34,7 @@ const socialLinks = [
   {
     icon: Phone,
     label: "Phone",
-    href: `https://wa.me/${personalInfo.phone}`,
+    href: `tel:${personalInfo.phone}`,
     display: personalInfo.phone,
   },
 ];
@@ -67,9 +67,9 @@ export function ContactSection() {
       className="section-padding relative overflow-hidden"
       aria-labelledby="contact-heading"
     >
-      {/* Radial glow */}
+      {/* Radial glow — percentage width so it never exceeds viewport */}
       <div
-        className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-[radial-gradient(circle,rgba(14,205,176,0.07),transparent_70%)] pointer-events-none"
+        className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-[400px] bg-[radial-gradient(circle,rgba(14,205,176,0.07),transparent_70%)] pointer-events-none"
         aria-hidden
       />
 
@@ -170,7 +170,7 @@ export function ContactSection() {
         <StaggerGroup className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {socialLinks.map((link) => (
             <StaggerItem key={link.label}>
-              <a
+              <Link
                 href={link.href}
                 target={link.external ? "_blank" : undefined}
                 rel={link.external ? "noopener noreferrer" : undefined}
@@ -183,7 +183,7 @@ export function ContactSection() {
                 <span className="text-sm text-muted group-hover:text-white transition-colors truncate">
                   {link.display}
                 </span>
-              </a>
+              </Link>
             </StaggerItem>
           ))}
         </StaggerGroup>
