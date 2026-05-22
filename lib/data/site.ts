@@ -3,6 +3,8 @@
 //  Update this file whenever your personal info changes.
 // ============================================================
 
+import { projects } from "./projects";
+
 export const siteConfig = {
   name: "Mahmoud Saleh",
   title: "Mahmoud Saleh — Full-Stack Developer",
@@ -44,7 +46,7 @@ export const personalInfo = {
 };
 
 export const stats = [
-  { value: "5+", label: "Projects Built" },
+  { value: projects.length.toString() + "+", label: "Projects Built" },
   { value: "4th", label: "Year CS Student" },
   { value: "2+", label: "Years Coding" },
 ];

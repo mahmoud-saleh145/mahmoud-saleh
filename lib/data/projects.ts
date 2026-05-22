@@ -67,8 +67,37 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: "react-ecommerce",
+    id: "spacehub",
     number: "03",
+
+    title: "SpaceHub",
+    shortDescription: "Full-stack workspace management dashboard with dual booking system and real-time session tracking.",
+    description: "SpaceHub is a production-grade admin dashboard built with Next.js 15 App Router and MongoDB, designed to manage coworking spaces end-to-end. It features a dual booking system: private room reservations with conflict detection and auto-pricing, plus a live open-workspace session tracker with real-time elapsed timers and automatic discount logic. The dashboard includes full CRUD for clients and workspaces, a combined revenue analytics page with stacked bar and area charts, dark/light mode, skeleton loading states, and Framer Motion page transitions. Auth is handled via JWT cookies with middleware-level route protection.",
+    tech: [
+      "Next.js 15", "TypeScript", "MongoDB", "Mongoose",
+      "Tailwind CSS", "Zustand", "React Hook Form",
+      "Zod", "Recharts", "Framer Motion", "JWT", "Sonner"
+    ],
+    githubUrl: "https://github.com/mahmoud-saleh145/Spacehub",
+    liveUrl: "https://spacehub-beta.vercel.app/login",
+    featured: true,
+    status: "live",
+    period: "2025",
+    gradient: "from-violet-600 to-indigo-500",
+    emoji: "🏢",
+    highlights: [
+      "Dual booking engine: time-slot reservations + live open-workspace sessions",
+      "Real-time session timer with automatic 20% discount after 4 hours",
+      "Double-booking conflict detection on all reservation writes",
+      "Combined revenue analytics with Recharts area + stacked bar charts",
+      "JWT auth with HTTP-only cookies and Next.js middleware route guards",
+      "CSV export for daily attendance logs",
+      "Fully responsive with collapsible sidebar, mobile drawer, and skeleton states"
+    ]
+  },
+  {
+    id: "react-ecommerce",
+    number: "04",
     title: "E-Commerce Platform",
     shortDescription:
       "React-based storefront with authentication, cart & payment workflow.",
@@ -85,8 +114,35 @@ export const projects: Project[] = [
     highlights: [],
   },
   {
+    id: "mansoura-college",
+    number: "05",
+
+    title: "Mansoura College",
+    shortDescription: "Modern multi-page school website for one of Egypt's leading international campuses.",
+    description: "A fully responsive React SPA for Mansoura College Educational Campus, featuring 14 routes, multi-system school support, interactive quizzes, news feed, gallery, admissions, and student life pages. Built with React Router v6, smooth animations, mobile-friendly navigation, and dynamic UI interactions.",
+    tech: [
+      "React 18", "React Router v6", "Vite",
+      "CSS Modules", "JavaScript (ES2022)"
+    ],
+    githubUrl: "https://github.com/mahmoud-saleh145/school",
+    liveUrl: "https://school-two-ivory.vercel.app/",
+    featured: false,
+    status: "live",
+    period: "2025",
+    gradient: "from-amber-500 to-yellow-400",
+    emoji: "🎓",
+    highlights: [
+      "14-route SPA covering all school stages, admissions, and campus life",
+      "Interactive quiz engine with 4 subjects, progress dots, and score screen",
+      "CSS-only animated ticker marquee and accordion tip sections",
+      "Mobile-first responsive design with sticky navbar and slide-in drawer",
+      "Dynamic page titles and scroll restoration on every route change",
+      "Embedded Google Maps integration on the contact page"
+    ]
+  },
+  {
     id: "yummy",
-    number: "04",
+    number: "06",
     title: "Global Food Directory",
     shortDescription:
       "API-driven food explorer with advanced search and dynamic filters.",
@@ -104,7 +160,7 @@ export const projects: Project[] = [
   },
   {
     id: "daniels-portfolio",
-    number: "05",
+    number: "07",
     title: "Daniels Portfolio",
     shortDescription:
       "Bootstrap portfolio with animated sections and filterable projects.",

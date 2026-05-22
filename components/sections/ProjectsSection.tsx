@@ -42,13 +42,13 @@ export function ProjectsSection() {
         {/* Bento grid */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-5">
           {/* Featured — spans 7 cols */}
-          <div className="md:col-span-7">
+          <div className="md:col-span-7 h-full">
             <ProjectCard project={featuredProject} featured />
           </div>
 
           {/* Second project — spans 5 cols */}
           {otherProjects[0] && (
-            <div className="md:col-span-5">
+            <div className="md:col-span-5 h-full">
               <ProjectCard project={otherProjects[0]} />
             </div>
           )}
@@ -57,7 +57,7 @@ export function ProjectsSection() {
           {otherProjects.slice(1).map((project) => (
             <div
               key={project.id}
-              className="md:col-span-4"
+              className="md:col-span-4 h-full"
             >
               <ProjectCard project={project} />
             </div>

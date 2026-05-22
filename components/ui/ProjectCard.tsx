@@ -31,7 +31,7 @@ export function ProjectCard({ project, featured, className }: ProjectCardProps) 
       transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
       whileHover={{ y: -6, borderColor: "rgba(91,110,245,0.4)" }}
       className={cn(
-        "group relative bg-surface border border-border rounded-2xl p-6 flex flex-col overflow-hidden cursor-pointer transition-colors duration-300",
+        "group relative bg-surface border border-border rounded-2xl p-6 flex flex-col overflow-hidden cursor-pointer transition-colors duration-300 h-full",
         className
       )}
       onClick={() => project.liveUrl && window.open(project.liveUrl, "_blank")}
@@ -100,7 +100,7 @@ export function ProjectCard({ project, featured, className }: ProjectCardProps) 
         {project.title}
       </h3>
 
-      <p className="text-sm text-muted leading-relaxed flex-1">
+      <p className="text-sm text-muted leading-relaxed flex-1 min-h-[112px] max-h-[112px] overflow-y-auto pr-1">
         {project.description}
       </p>
 
