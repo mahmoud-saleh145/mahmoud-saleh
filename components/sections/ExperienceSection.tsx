@@ -7,6 +7,7 @@ import { SectionTitle } from "@/components/ui/SectionTitle";
 import { AnimateIn } from "@/components/animations/AnimateIn";
 import { StaggerGroup, StaggerItem } from "@/components/animations/StaggerGroup";
 import { fadeLeft, fadeRight } from "@/lib/animations/variants";
+import { projects } from "@/lib/data/projects";
 
 export function ExperienceSection() {
   return (
@@ -95,7 +96,7 @@ export function ExperienceSection() {
                 <div className="bg-gradient-to-br from-accent/10 via-accent-2/5 to-transparent border border-accent/20 rounded-2xl p-6 text-center grid grid-cols-2 gap-6">
                   <div>
                     <p className="font-syne font-extrabold text-4xl text-accent leading-none">
-                      5+
+                      {projects.length.toString() + "+"}
                     </p>
                     <p className="text-xs text-muted mt-1.5">
                       Production projects
